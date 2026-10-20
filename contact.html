@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | MBR Tech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">M</span>
+        <span>MBR Tech</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Réalisations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <div>
+          <span class="tiny-tag">Contact</span>
+          <h1>Parlons de votre projet</h1>
+        </div>
+        <div class="breadcrumb">Accueil <span>›</span> Contact</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-wrap">
+        <div class="contact-box">
+          <span class="tiny-tag">MBR Tech</span>
+          <h2>Contactez-nous</h2>
+          <p>Nous sommes disponibles pour vous conseiller sur vos besoins informatiques, réseaux et systèmes.</p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Adresse</strong>
+                <p>Votre zone d’intervention / localité</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Téléphone</strong>
+                <p>+221 XX XX XX XX</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <p>contact@mbrtech.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <form class="form" id="contactForm">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Nom</label>
+                <input id="name" type="text" placeholder="Votre nom" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Votre email" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="subject">Objet</label>
+                <input id="subject" type="text" placeholder="Objet du message" required />
+              </div>
+
+              <div class="field">
+                <label for="phone">Téléphone</label>
+                <input id="phone" type="tel" placeholder="Votre téléphone" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Décrivez votre besoin..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="brand">
+        <span class="brand-mark">M</span>
+        <span>MBR Tech</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Réalisations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>© <span id="year"></span> MBR Tech</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
