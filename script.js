@@ -6,7 +6,7 @@ if (menuBtn && navLinks) {
     navLinks.classList.toggle('open');
   });
 
-  navLinks.querySelectorAll('a').forEach(link => {
+  navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 }
@@ -18,17 +18,17 @@ if (yearEl) {
 
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
     const button = contactForm.querySelector('button[type="submit"]');
     if (button) {
-      const original = button.textContent;
+      const originalText = button.textContent;
       button.textContent = 'Message envoyé';
       button.disabled = true;
 
       setTimeout(() => {
-        button.textContent = original;
+        button.textContent = originalText;
         button.disabled = false;
         contactForm.reset();
       }, 2200);
